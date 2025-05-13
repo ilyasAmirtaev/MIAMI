@@ -1,0 +1,18 @@
+{
+  "name": "miami",
+  "version": "1.0.0",
+  "description": "Landing Miami",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server --baseDir=src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "sass --watch src/assets/styles/main.scss src/assets/styles/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "bootstrap": "^5.3.2",
+    "sass": "^1.87.0"
+  }
+}

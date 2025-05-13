@@ -1,0 +1,113 @@
+.header {
+    background-image: url("/assets/styles/images/header-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 24px 120px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+    &__menu {
+        background-image: url("/assets/styles/images/menu.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 24px;
+        height: 16px;
+        border-radius: 2px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 80px;
+        font-weight: 700;
+        color: #FFFFFF;
+        letter-spacing: -1.5px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: #FFFFFF;
+            display: block;
+            position: absolute;
+        }
+    }
+  }
+
+.header__fullscreen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #007fff;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header__fullscreen-menu.active {
+    display: flex;
+  }
+  
+  .header__menu-close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .menu__logo {
+    margin-bottom: 30px;
+  }
+  
+  .menu__links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  
+    li {
+      margin: 15px 0;
+  
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }  
+  
+  .menu__contact {
+    margin-top: 40px;
+    text-align: center;
+
+    p {
+        margin: 5px 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+  }

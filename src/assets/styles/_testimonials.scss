@@ -1,0 +1,41 @@
+.testimonials {
+    
+    &__cells  {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+}
+
+.cell {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+
+    &__name {
+        font-weight: 700;
+        font-size: 24px;
+        color: $blue-color;
+    }
+
+    &__job {
+        font-size: 14px;
+        font-weight: 400;
+        color: #9FADC2;
+    }
+
+    &__comment {
+        color: $gray-color;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__avatar {
+        width: 70%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+}

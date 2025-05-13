@@ -1,0 +1,53 @@
+.gallery {
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+        img {
+            height: 40vh;
+            object-fit: cover;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        &-large {
+            width: calc((100% * (2 / 3)) - 8px);
+        }
+
+        &-small {
+            width: calc((100% * (1 / 3)) - 8px);
+        }
+
+        &-left {
+            width: calc(50% - 8px);
+            
+        }
+
+        &-right {
+            width: calc(50% - 8px);
+            
+        }
+
+        
+    }
+
+    &__text {
+        margin: 24px 0;
+        color: $gray-color;
+    }
+
+    &__button {
+        border-radius: 8px;
+        border: 2px solid $blue-color;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: transparent;
+        color: $blue-color; 
+        cursor: pointer;
+        padding: 18px 40px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}

@@ -111,3 +111,13 @@
         font-size: 14px;
     }
   }
+
+  @media screen and (min-width: $phone-screen-size) {
+    .header {
+      &__title {
+        font-size: 100px;
+      }
+    }
+  }
+
+  

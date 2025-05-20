@@ -39,3 +39,24 @@
         margin-bottom: 16px;
     }
 }
+
+
+@media screen and (min-width: $phone-screen-size) {
+    .testimonials {
+    
+        &__cells  {
+            flex-direction: column;
+        }
+    }
+
+    .cell {
+
+        &__comment {
+            font-size: 40px;
+        }
+
+        &__job {
+            font-size: 30px;
+        }
+    }
+}

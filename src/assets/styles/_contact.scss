@@ -9,21 +9,21 @@
     &__form {
         flex-direction: column;
         display: flex;
-        width: 100%;
+        width: 50%;
 
 
         &-name {
             padding: 14px 17px;
             border-radius: 8px;
             margin-bottom: 16px;
-            background-color: rgba(225,255,251,0.8);
+            background-color: #F6F8FF;
         }
 
         &-email {
             padding: 14px 17px;
             border-radius: 8px;
             margin-bottom: 16px;
-            background-color: rgba(225,255,251,0.8);
+            background-color: #F6F8FF;
         }
 
         &-message {
@@ -32,7 +32,7 @@
             scrollbar-width: none;
             resize: none;
             margin-bottom: 32px;
-            background-color: rgba(225,255,251,0.8);
+            background-color: #F6F8FF;
         }
 
         &-button {
@@ -65,5 +65,21 @@
         margin-right: 111px;
         font-weight: 400;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: $phone-screen-size) {
+    .contact {
+        &__datas {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .data {
+       
+        &__address {
+            margin-bottom: 32px;
+        }
     }
 }
